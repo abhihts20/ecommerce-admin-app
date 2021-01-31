@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/abhihts20/ecommerce-admin-app/static/css/main.c22dc376.chunk.css",
-    "main.js": "/abhihts20/ecommerce-admin-app/static/js/main.84c65600.chunk.js",
-    "main.js.map": "/abhihts20/ecommerce-admin-app/static/js/main.84c65600.chunk.js.map",
+    "main.css": "/abhihts20/ecommerce-admin-app/static/css/main.a2676750.chunk.css",
+    "main.js": "/abhihts20/ecommerce-admin-app/static/js/main.4f36f651.chunk.js",
+    "main.js.map": "/abhihts20/ecommerce-admin-app/static/js/main.4f36f651.chunk.js.map",
     "runtime-main.js": "/abhihts20/ecommerce-admin-app/static/js/runtime-main.3ac2255d.js",
     "runtime-main.js.map": "/abhihts20/ecommerce-admin-app/static/js/runtime-main.3ac2255d.js.map",
     "static/js/2.d8c32286.chunk.js": "/abhihts20/ecommerce-admin-app/static/js/2.d8c32286.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.530a7764.chunk.js": "/abhihts20/ecommerce-admin-app/static/js/3.530a7764.chunk.js",
     "static/js/3.530a7764.chunk.js.map": "/abhihts20/ecommerce-admin-app/static/js/3.530a7764.chunk.js.map",
     "index.html": "/abhihts20/ecommerce-admin-app/index.html",
-    "static/css/main.c22dc376.chunk.css.map": "/abhihts20/ecommerce-admin-app/static/css/main.c22dc376.chunk.css.map",
+    "static/css/main.a2676750.chunk.css.map": "/abhihts20/ecommerce-admin-app/static/css/main.a2676750.chunk.css.map",
     "static/js/2.d8c32286.chunk.js.LICENSE.txt": "/abhihts20/ecommerce-admin-app/static/js/2.d8c32286.chunk.js.LICENSE.txt",
     "static/media/background.1141e41e.png": "/abhihts20/ecommerce-admin-app/static/media/background.1141e41e.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3ac2255d.js",
     "static/js/2.d8c32286.chunk.js",
-    "static/css/main.c22dc376.chunk.css",
-    "static/js/main.84c65600.chunk.js"
+    "static/css/main.a2676750.chunk.css",
+    "static/js/main.4f36f651.chunk.js"
   ]
 }
