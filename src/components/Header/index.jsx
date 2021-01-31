@@ -15,15 +15,13 @@ const Header = (props) => {
                 <Nav className="mr-auto">
                 </Nav>
                 <Nav className="nav p-2">
-                  <li className="nav-item pl-2 pr-2 text-center"><NavLink to="signin" className="nav-link" activeClassName="activeAdminNavLink">Sigin</NavLink></li>
-                  <li className="nav-item pl-2 pr-2 text-center"><NavLink to="signup" className="nav-link" activeClassName="activeAdminNavLink">Sigup</NavLink></li>
-
+                  <li className="nav-item pl-2 pr-2 text-center"><NavLink to="signin" className="nav-link" activeClassName="activeAdminNavLink">Sign In</NavLink></li>
+                  <li className="nav-item pl-2 pr-2 text-center"><NavLink to="signup" className="nav-link" activeClassName="activeAdminNavLink">Sign Up</NavLink></li>
                 </Nav>
               </Navbar.Collapse>
             </Container>
           </Navbar>
         </div>
-
       </>
   )
 }

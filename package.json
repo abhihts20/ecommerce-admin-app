@@ -28,7 +28,11 @@
   },
   "scripts": {
     "predeploy": "npm run build",
+<<<<<<< HEAD
     "deploy": "gh-pages -b master -d build",
+=======
+    "deploy": "gh-pages -d build",
+>>>>>>> 4c8e1699c56861a134e6d491cc5609d0bd464963
     "start": "set PORT=4000 && craco start",
     "build": "craco build",
     "test": "craco test",
