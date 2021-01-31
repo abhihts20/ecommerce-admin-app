@@ -1,0 +1,16 @@
+#menu-toggle:checked + #menu {
+    display: block;
+}
+
+.activeAdminNavLink{
+    background-color: #8249FF;
+    border-radius:0.5rem;
+    color:white!important;
+    font-weight:bolder;
+    transition: 0.5s;
+
+}
+
+nav{
+    shadow: #8249FF;
+}
