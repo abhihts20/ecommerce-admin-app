@@ -6,7 +6,7 @@ export const lightTheme = {
 }
 
 export const darkTheme = {
-  body: '#0B0B0B',
+  body: '#222328',
   color: '#FFFFFF',
   toggleBorder: '#6B8096',
   background: '#999',

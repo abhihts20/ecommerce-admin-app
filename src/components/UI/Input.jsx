@@ -1,10 +1,11 @@
 import React from 'react'
+import './Input.css'
 import {Form} from "react-bootstrap";
 
 const Input = (props) => {
     return (
         <>
-            <Form.Group controlId="formBasicEmail">
+            <Form.Group>
                 <Form.Label className="text-purple-500">{props.label}</Form.Label>
                 <Form.Control type={props.type}
                               className={"shadow focus:ring-3 focus:ring-purple-500"}

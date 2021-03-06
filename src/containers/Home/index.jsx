@@ -1,13 +1,21 @@
 import React from 'react'
+import './Home.css'
 import Layout from '../../components/Layout'
-import {Jumbotron} from 'react-bootstrap'
+import {Col, Container, Row} from 'react-bootstrap'
+import {NavLink} from "react-router-dom";
+import {signOut} from "../../redux/actions";
+import {useDispatch} from "react-redux";
 
 const Home = () => {
-    const theme= window.localStorage.getItem('theme') 
+    // const theme= window.localStorage.getItem('theme')
+    const dispatch = useDispatch();
+    const logout = () => {
+        dispatch(signOut());
+    }
     return (
         <>
-            <Layout>
-                <Jumbotron className="text-center"><h1>Welcome to Dashboard</h1></Jumbotron>
+            <Layout sidebar>
+                {/*<Jumbotron className="text-center"><h1>Welcome to Dashboard</h1></Jumbotron>*/}
             </Layout>
         </>
     )

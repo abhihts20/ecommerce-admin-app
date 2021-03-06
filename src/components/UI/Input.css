@@ -1,0 +1,26 @@
+.form-control{
+    outline:none;
+    padding: 1rem;
+    border-radius: 0.75rem !important;
+    border-color: #8249ff;
+}
+label{
+    font-weight: bolder;
+}
+input:focus{
+    outline: none !important;
+    /*border:1px solid red;*/
+    /*border-color: #8249FF !important;*/
+    box-shadow: 0 0 10px mediumpurple !important;
+}
+button:hover{
+    background-color:#8249FF!important;
+    transform: scaleX(1.006);
+    transition: 0.6s ease;
+}
+
+button{
+    margin:10px;
+    border-radius: 0.75rem !important;
+}
+
