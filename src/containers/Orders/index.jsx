@@ -4,7 +4,8 @@ import Layout from "../../components/Layout";
 const Orders = () => {
     return (
         <Layout sidebar>
-            <p>Orders</p>
+           <p>Orders</p>
+
         </Layout>
     );
 };

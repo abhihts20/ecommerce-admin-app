@@ -25,12 +25,14 @@ function App() {
     return (
         <div className={"dark:bg-black-500"}>
             <Switch>
-                <PrivateRoute exact={true} path="/" component={Home}/>
+                <PrivateRoute path="/" exact="true" component={Home} />
+                <PrivateRoute  path="/home" component={Home}/>
                 <PrivateRoute path="/orders" component={Orders}/>
                 <PrivateRoute path="/products" component={Products}/>
                 <PrivateRoute path="/category" component={Category}/>
                 <Route path="/signin" component={Signin}/>
                 <Route path="/signup" component={Signup}/>
+                <Route path={"*"} component={Home} />
             </Switch>
         </div>
     );

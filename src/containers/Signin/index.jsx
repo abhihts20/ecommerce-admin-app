@@ -24,7 +24,7 @@ const Signin = () => {
         dispatch(login(user));
     }
     if (auth.authenticate) {
-        return <Redirect to={`/`}/>
+        return <Redirect to={`/home`}/>
     }
 
     return (

@@ -1,4 +1,37 @@
+/*===== VARIABLES CSS =====*/
+/*:root{*/
+/*  --header-height: 3rem;*/
+/*  --nav-width: 68px;*/
 
+/*  !*===== Colors =====*!*/
+/*  --first-color: #4723D9;*/
+/*  --first-color-light: #AFA5D9;*/
+/*  --white-color: #F7F6FB;*/
+
+/*  !*===== Font and typography =====*!*/
+/*  --body-font: 'Nunito', sans-serif;*/
+/*  --normal-font-size: 1rem;*/
+
+/*  !*===== z index =====*!*/
+/*  --z-fixed: 100;*/
+/*}*/
+
+/**,::before,::after{*/
+/*  box-sizing: border-box;*/
+/*}*/
+
+.bodyClass{
+  position: relative;
+  margin: 3rem 0 0 0;
+  padding: 0 1rem;
+  transition: .5s ease;
+}
+/*body{*/
+/*  background-color: #EAECF4;*/
+/*}*/
+a{
+  text-decoration: none;
+}
 
 .App {
   max-width: 960px;
@@ -13,6 +46,8 @@
   list-style: none;
   padding: 0;
 }
+
+
 
 .section-title {
   margin-top: 30px;
@@ -76,13 +111,13 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #8249FF;
+  background: #4723D9;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #8249FF;
+  background: #4723D9;
 }
 
 

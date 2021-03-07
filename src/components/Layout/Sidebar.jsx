@@ -1,104 +1,88 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {NavLink} from "react-router-dom";
 import {Col} from "react-bootstrap";
 import {useDispatch} from "react-redux";
 import {signOut} from "../../redux/actions";
+// import showNavbar from '../../utils/nav'
 
 const Sidebar = () => {
     const dispatch = useDispatch();
 
+    const showNavbar = () =>{
+        const toggle = document.getElementById('header-toggle');
+        const nav = document.getElementById('nav-bar');
+        const bodypd = document.getElementById('body-pd');
+        const headerpd = document.getElementById('header')
+        nav.className.toggle('show')
+        toggle.className.toggle('bx-x')
+        bodypd.className.toggle('body-pd')
+        headerpd.className.toggle('body-pd')
+    }
+
     return (
         <>
-            <header className="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-                <a className="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Company name</a>
-                <button className="navbar-toggler position-absolute d-md-none collapsed" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <input className="form-control form-control-dark w-100" type="text" placeholder="Search"
-                       aria-label="Search"/>
-                    <ul className="navbar-nav px-3">
-                        <li className="nav-item text-nowrap">
-                            <a className="nav-link" href="#">Sign out</a>
-                        </li>
-                    </ul>
-            </header>
-            <nav id="sidebarMenu" className="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-                <div className="position-sticky pt-3">
-                    <ul className="nav flex-column">
-                        <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">
-                                <span data-feather="home"></span>
-                                Dashboard
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">
-                                <span data-feather="file"></span>
-                                Orders
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">
-                                <span data-feather="shopping-cart"></span>
-                                Products
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">
-                                <span data-feather="users"></span>
-                                Customers
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">
-                                <span data-feather="bar-chart-2"></span>
-                                Reports
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">
-                                <span data-feather="layers"></span>
-                                Integrations
-                            </a>
-                        </li>
-                    </ul>
+           <div className="body-pd">
+               <header className="header" id="header">
+                   <div className="header__toggle"  onClick={()=> {
+                       showNavbar()
+                   }}>
+                       <i className='bx bx-menu' id="header-toggle"/>
+                   </div>
 
-                    <h6 className="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                        <span>Saved reports</span>
-                        <a className="link-secondary" href="#" aria-label="Add a new report">
-                            <span data-feather="plus-circle"></span>
-                        </a>
-                    </h6>
-                    <ul className="nav flex-column mb-2">
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">
-                                <span data-feather="file-text"></span>
-                                Current month
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">
-                                <span data-feather="file-text"></span>
-                                Last quarter
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">
-                                <span data-feather="file-text"></span>
-                                Social engagement
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">
-                                <span data-feather="file-text"></span>
-                                Year-end sale
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+                   <div className="header__img">
+                       <img src="assets/img/perfil.jpg" alt=""/>
+                   </div>
+               </header>
+
+               <div className="l-navbar" id="nav-bar">
+                   <nav className="nav">
+                       <div>
+                           <a href="#" className="nav__logo">
+                               <i className='bx bx-layer nav__logo-icon'></i>
+                               <span className="nav__logo-name">Bedimcode</span>
+                           </a>
+
+                           <div className="nav__list">
+                               <a href="#" className="nav__link active">
+                                   <i className='bx bx-grid-alt nav__icon'></i>
+                                   <span className="nav__name">Dashboard</span>
+                               </a>
+
+                               <a href="#" className="nav__link">
+                                   <i className='bx bx-user nav__icon'></i>
+                                   <span className="nav__name">Users</span>
+                               </a>
+
+                               <a href="#" className="nav__link">
+                                   <i className='bx bx-message-square-detail nav__icon'></i>
+                                   <span className="nav__name">Messages</span>
+                               </a>
+
+                               <a href="#" className="nav__link">
+                                   <i className='bx bx-bookmark nav__icon'></i>
+                                   <span className="nav__name">Favorites</span>
+                               </a>
+
+                               <a href="#" className="nav__link">
+                                   <i className='bx bx-folder nav__icon'></i>
+                                   <span className="nav__name">Data</span>
+                               </a>
+
+                               <a href="#" className="nav__link">
+                                   <i className='bx bx-bar-chart-alt-2 nav__icon'></i>
+                                   <span className="nav__name">Analytics</span>
+                               </a>
+                           </div>
+                       </div>
+
+                       <a href="#" className="nav__link">
+                           <i className='bx bx-log-out nav__icon'></i>
+                           <span className="nav__name">Log Out</span>
+                       </a>
+                   </nav>
+               </div>
+
+           </div>
         </>
     );
 };
